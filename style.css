@@ -1,0 +1,54 @@
+@import url("hny.jpg");
+* {
+    transition : all 0.2s ease-in-out;
+}
+body{
+    background:#6c63ff;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #f3eeee;
+}
+ .card{
+    background: #efeded;
+    border-radius: 4px;
+    height: 85vh;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: lem;
+    overflow: hidden;
+    font-size: 20px;
+ }
+ @media only screen and (min-width: 1000px){
+    .card{
+        flex-direction: row-reverse;
+ }
+    .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+ }
+ @media only screen and (max-height: 640px){
+    .card{
+        flex-direction: row-reverse;
+    }
+        .card img.birthday{
+            width: 100%;
+            max-width: 50vw;
+            max-height: unset;
+        }
+ }
+ img.birthday {
+    max-height: 40vh;
+ }
+ .text {
+    padding: lem;
+    color: #333;
+ }
